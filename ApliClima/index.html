@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <title>API de Clima</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 100wh;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: white;
+        }
+        .container {
+            width: 70%;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            background-color: rgba(0,0,0,0.8);
+            color: white;
+            border-radius: 20px;
+            padding: 40px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>Api de Clima</h1>
+            <hr>
+            <div class="wheater">
+                <h2></h2>
+                <h2 id ='emoji'></h2>
+            </div>
+        </div>
+        <div>
+            <h1>Ubica tu Localidad</h1>
+            <hr>
+            <label for="city" class="form-label">Escribe la Ciudad</label>
+            <input type="text" class="form-control" id="city" placeholder="Ciudad">
+            <button class="btn btn-outline-primary mt-3" id="btnCity">Buscar</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

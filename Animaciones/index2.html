@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos 2D con Canvas</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 100wh;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: black;
+            color: white;
+        }
+
+        .container {
+            width: 70%;
+            text-align: center;
+        }
+
+        .container * {
+            margin: 10px;
+        }
+
+        #lienzo {
+            background-color: rgba(6, 6, 6, 0.7);
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px 5px #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Gráficos 2D con Canvas HTML y Javascript</h1>
+        <h2>Se ha comido <span></span></h2>
+        <canvas id="lienzo" width="640" height="400"></canvas>
+    </div>
+    <script src="./moves.js"></script>
+</body>
+
+</html>
